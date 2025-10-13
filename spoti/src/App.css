@@ -1,0 +1,364 @@
+* {
+  padding: 0px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  text-align: center;
+  flex-direction: column;
+   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+.container-inicial {
+  display: flex;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    background-color:black;
+    text-align: center;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.espacio{
+  width: 500px;
+}
+
+.texto-reini{
+
+  color: white;
+}
+
+
+.btn-registrate{
+ width: 300px;
+ height: 50px;
+ border-radius: 40px;
+ background-color:#1CA735 ;
+ border: #1CA735;
+  cursor: pointer;
+}
+.btn-registrate:hover{
+   transform: scale(1.05);
+  border-color: white;
+  font-size: 15px;
+}
+.btn-registrate2{
+ width: 300px;
+ height: 50px;
+ border-radius: 40px;
+ background-color:#1CA735 ;
+ border: #1CA735;
+ cursor: pointer;
+
+}
+.btn-registrate2:hover{
+   transform: scale(1.05); 
+  border-color: white;
+  font-size: 15px;
+}
+
+.btn-iniciarsesion{
+ width: 300px;
+ height: 50px;
+ border-radius: 40px;
+ background-color:black ;
+ border: solid 1px #3f493f;
+ color: white;
+ cursor: pointer;
+}
+
+
+.btn-iniciarsesion:hover {
+  background-color: #1CA735; 
+  color: black;
+  transform: scale(1.05); 
+  border-color: white;
+  font-size: 15px;
+}
+
+.contendor-link{
+position: relative;
+top: 110px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form label {
+  font-size: 18px;
+  color: white;
+}
+
+.form input {
+  
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background: rgb(26, 26, 26);
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+
+.msg {
+  margin-top: 8px;
+  font-size: 17px;
+  color: #1CA735;
+}
+
+
+/*Principal page navegacion*/
+.cabeza{
+  display: flex;
+  flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+   height: 60px;
+   width:380px ;
+ position: relative;
+    top: 10px;
+
+}
+.btn-cerrarsesion{
+ width: 100px;
+ height: 30px;
+ border-radius: 40px;
+ background-color:#1CA735 ;
+ border: solid 1px white;
+  cursor: pointer;
+  font-size: 12px;
+color: white;
+position: relative;
+top: 7px;
+right: 5px;
+}
+
+.btn-cerrarsesion:hover {
+  background-color: #1CA735; 
+  color: white;
+  transform: scale(1.05); 
+  border-color: white;
+  font-size: 12px;
+  border: solid 1px white;
+}
+
+.email{
+  color: white;
+  font-size: 10px;
+}
+
+.full{
+  width: 90px;
+  height: 20px;
+}
+
+.perfil{
+  width: 30px;
+  height: 30px ;
+}
+
+.perfil-container{
+  position: relative;
+  left: 70px;
+  top: 7px;
+}
+
+.container-navegacion {
+  width: 390px;
+  height: 60px;
+  display: flex;
+  background-color: #0d0e0d;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 30px;
+  position: fixed;       /* Se queda fijo */
+  bottom: 12px;          /* Lo pones abajo (cámbialo a top:0 si lo quieres arriba) */
+  left: 50%;             /* Lo centramos horizontalmente */
+  transform: translateX(-50%);
+  border-radius: 12px;   /* Bordes redondeados bonitos */
+  z-index: 1000;         /* Se asegura de estar encima */
+}
+  
+
+.img-navegacion {
+  width: 50px;
+  height: 40px;
+ cursor: pointer;
+ 
+}
+.img-navegacion:hover {
+  transform: scale(1.05); 
+  border-color: white;
+ border-radius: 3px;
+
+  
+ 
+}
+
+.text-navegacion{
+  font-size: 12px;
+  color: white;
+  position: relative;
+  bottom: 17px;
+  text-align: center;
+}
+/* PLAYER */
+.text-topmusic {
+  color: white;
+  text-align: left;
+}
+
+.contenedor-tracks {
+  width: 390px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* siempre 2 columnas */
+  gap: 12px;
+  overflow: auto;
+  height:400px ;
+  position: relative;
+ bottom: 20px;
+ 
+}
+
+.track {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #161616;
+  border-radius: 8px;
+  color: white;
+  font-size: 10px;
+  padding: 8px;              /* espacio interno en lugar de width fijo */
+  box-sizing: border-box;    /* para que respete el grid */
+}
+
+.track strong {
+  font-size: 10px;
+}
+
+.artist {
+  font-size: 8px;
+  color: white;
+}
+
+.info {
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.text-p {
+  position: relative;
+  left: 152px;
+  bottom: 18px;
+  color: white;
+}
+
+.album-cover {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+/*controles play y pause*/
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 2px;             /* separación entre botones */
+  margin-top: 5px;
+}
+
+.controls .btn {
+  background: #1CA735;  /* verde estilo Spotify */
+  border: none;
+  color: black;
+  font-size: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  
+}
+
+
+.controls .btn:hover {
+  background: black;  /* un poco más claro al pasar el mouse */
+  color: white;
+}
+
+.btn-heart{
+  background: transparent;  /* verde estilo Spotify */
+  border: solid 1px black;
+  color: black;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+ .btn-heart:hover {
+  background: #1CA735; 
+  color: black;
+  border: solid 1px black;
+}
+
+
+
+/*favorites estilos*/
+
+.play-button {
+ background: #1CA735;  /* verde estilo Spotify */
+  border: none;
+  color: black;
+  font-size: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  
+}
+
+.play-button:hover {
+  transform: scale(1.08);
+  background-color: #17a84b;
+}
+
+/* ==== CONTENEDOR DEL PLAYER ==== */
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+/* ==== TEXTO CUANDO NO HAY PREVIEW ==== */
+.no-preview {
+  font-size: 11px;
+  color: #a1a1a1;
+  font-style: italic;
+}
+
+
+
+/*biblioteca*/
+
+.atras{
+position: relative;
+right: 160px;
+    bottom: 18px;
+cursor: pointer;
+
+}

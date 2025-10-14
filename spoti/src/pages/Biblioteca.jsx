@@ -19,7 +19,7 @@ function Biblioteca() {
   return (
     <div className="container-inicial">
       <div className="espacio"></div>
-      <a href="/principal"> <div className="atras" > < img src={Atras} alt=""  /> </div></a>
+     <Link to={'/principal'} > <div className="atras" > < img src={Atras} alt=""  /> </div></Link>
 
       {user ? (
         <Favorites user={user} />

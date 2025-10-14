@@ -7,7 +7,7 @@ function Navegacion() {
   return (
     <div className='container-navegacion' >
         <div className='img-navegacion' >
-    <a href="/principal"> <div className='home' > < img   src={Home} alt=""  /> </div> </a> 
+    <Link to={'/principal'} > <div className='home' > < img   src={Home} alt=""  /> </div> </Link>
       <div><p className='text-navegacion' >Home</p></div>
       </div>
       <div className='img-navegacion' >

@@ -20,7 +20,7 @@ const { data, error } = await supabase.auth.signUp({ email, password })
 
 
 if (error) setMessage(error.message)
-else setMessage('Registro exitoso Inicia Sesion ')
+else setMessage('Registro exitoso confirma tu email ')
 
 }
 
